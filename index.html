@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercize Two</title>
+</head>
+<body>
+    <div id="books">
+
+    </div>
+
+    <script>
+        const body = document.getElementById("books"); 
+
+        var books = [
+            {
+            title: 'The Design of EveryDay Things',
+            author: 'Don Norman',
+            alreadyRead: false
+        }, {
+            title: 'The Most Human Human',
+            author: 'Brian Christian',
+            alreadyRead: true
+        }
+        ];
+
+        books.forEach(x => {
+            var p = document.createElement("p");
+            p.textContent = `Title: ${x.title}  Author: ${x.author} Has Read?: ${x.alreadyRead}`
+            body.appendChild(p)
+        })
+    </script>
+</body>
+</html>
