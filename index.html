@@ -28,7 +28,7 @@
 
         books.forEach(x => {
             var p = document.createElement("p");
-            p.textContent = `Title: ${x.title}  Author: ${x.author} Has Read?: ${x.alreadyRead}`
+            p.innerHTML += `Title: ${x.title}  Author: ${x.author} Has Read?: ${x.alreadyRead} <br>`
             body.appendChild(p)
         })
     </script>
